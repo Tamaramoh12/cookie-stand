@@ -131,3 +131,4 @@ function totalOfTotal(){
     }
 }
 
+//Finally, Lab 7 has done, 12:30am 
