@@ -35,7 +35,20 @@ Country.prototype.render = function(){
     //creating the first row which is including the hours
     var firsRow = document.createElement('tr');
     table.appendChild(firsRow);
-}
+    for (var i = 6;0 <= 11;i++){
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        td.textContent = i + ':00 am ';
+    }
+    for (var i = 12;0 >= 7;i--){
+        var td = document.createElement('td');
+        tr.appendChild(td);
+        td.textContent = i + ':00 am ';
+    }
+};
+
+
+
 
 
 //creating the objects using constructor
