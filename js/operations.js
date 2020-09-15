@@ -26,7 +26,16 @@ Country.prototype.avgCookiesPerCustomer = function(){
     return Cookies;
 };
 
-
+Country.prototype.render = function(){
+    //function to design a 7×16 table using DOM
+    var parentElement = document.getElementById('table-result');
+    //the basic table tag  
+    var table = document.createElement('table');
+    parentElement.appendChild(table);
+    //creating the first row which is including the hours
+    var firsRow = document.createElement('tr');
+    table.appendChild(firsRow);
+}
 
 
 //creating the objects using constructor
