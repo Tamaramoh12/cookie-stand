@@ -17,6 +17,7 @@ function Country(name, minHourlyCustomers, maxHourlyCustomers, avgCookies) {
     this.cookies=[]; //array to store the avgcookiespercustomer
     obj.push(this); //array to store all the objects in
 }
+
 // each constructor have prototype associated to it, 
 //to add the methods to the constructor
 Country.prototype.customersPerHour = function () {
@@ -28,9 +29,8 @@ Country.prototype.customersPerHour = function () {
 };
 
 Country.prototype.avgCookiesPerCustomer = function () {
-    // function to multiply the avgCookies by customersPerHour to get the avgCookiesPerCustomer
-    this.cookies.push  (Math.ceil(this.avgCookies) * this.customersPerHour());
-    
+    // function to multiply the avgCookies by customersPerHour to get the avgCookiesPer Customer
+    this.cookies.push(Math.ceil(this.avgCookies) * this.customersPerHour());
 };
 
 //creating the table
