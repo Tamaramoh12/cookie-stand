@@ -1,4 +1,26 @@
 'use strict';
+//Lab 7 - Constructors
+
+//creating the constructor and include the proprties inside it
+function Country (minHourlyCustomers, maxHourlyCustomers, avgCookies){
+    //this keyword refers to the object that is calling the constructor . property = value;
+    this.minHourlyCustomers = minHourlyCustomers;  
+    this.maxHourlyCustomers = maxHourlyCustomers;
+    this.avgCookies = avgCookies;
+}
+
+//creating the objects using constructor
+//new keyword calls the constructor
+var Seattle = new Country(23,65,6.3);
+var Tokyo = new Country(3,24,1.2);
+var Dubai = new Country(11,38,3.7);
+var Paris = new Country(20,38,2.3);
+var Paris = new Country(20,38,2.3);
+var Lima = new Country(2,16,4.6);
+
+
+
+//Lab 6 - DOM & Objects - Without use of constructor
 //Seattle
 var Seattle = {
     minHourlyCustomers: 23,
@@ -53,10 +75,7 @@ var Seattle = {
     }
 
 };
-
 //to call the function which is inside the object
-// Seattle.customersPerHour();
-// Seattle.avgCookiesPerCustomer(); 
 Seattle.render();
 
 //Tokyo
@@ -115,9 +134,9 @@ Tokyo.render();
 
 //Dubai
 var Dubai = {
-    minHourlyCustomers: 3,
-    maxHourlyCustomers: 24,
-    avgCookies: 1.2,
+    minHourlyCustomers: 11,
+    maxHourlyCustomers: 38,
+    avgCookies: 3.7,
 
     // function to generate a random number for customers per hour
     customersPerHour: function () {
@@ -169,9 +188,9 @@ Dubai.render();
 
 //Paris
 var Paris = {
-    minHourlyCustomers: 3,
-    maxHourlyCustomers: 24,
-    avgCookies: 1.2,
+    minHourlyCustomers: 20,
+    maxHourlyCustomers: 38,
+    avgCookies: 2.3,
 
     // function to generate a random number for customers per hour
     customersPerHour: function () {
@@ -223,9 +242,9 @@ Paris.render();
 
 //Lima
 var Lima = {
-    minHourlyCustomers: 3,
-    maxHourlyCustomers: 24,
-    avgCookies: 1.2,
+    minHourlyCustomers: 2,
+    maxHourlyCustomers: 16,
+    avgCookies: 4.6,
 
     // function to generate a random number for customers per hour
     customersPerHour: function () {
