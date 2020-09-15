@@ -9,6 +9,26 @@ function Country (minHourlyCustomers, maxHourlyCustomers, avgCookies){
     this.avgCookies = avgCookies;
 }
 
+// each constructor have prototype associated to it, 
+//to add the methods to the constructor
+Country.prototype.customersPerHour = function(){
+    // function to generate a random number for customers per hour
+    var random = Math.random(); // 0 - 1
+    random = (random * (this.maxHourlyCustomers - this.minHourlyCustomers + 1)) + this.minHourlyCustomers; // less than or equal max
+    random = Math.floor(random); // remove fractions
+    console.log(random);
+    return random;    
+};
+
+Country.prototype.avgCookiesPerCustomer = function(){
+    // function to multiply the avgCookies by customersPerHour to get the avgCookiesPerCustomer
+    var Cookies = Math.floor(this.avgCookies) * this.customersPerHour();
+    return Cookies;
+};
+
+
+
+
 //creating the objects using constructor
 //new keyword calls the constructor
 var Seattle = new Country(23,65,6.3);
@@ -17,6 +37,7 @@ var Dubai = new Country(11,38,3.7);
 var Paris = new Country(20,38,2.3);
 var Paris = new Country(20,38,2.3);
 var Lima = new Country(2,16,4.6);
+
 
 
 
