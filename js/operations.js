@@ -132,6 +132,7 @@ obj[0].renderFirstRow();
 for (var i = 0; i < obj.length; i++) {
     obj[i].renderContent();
 }
+
 totalOfTotal();
 // obj[0].renderLastRow();
 
