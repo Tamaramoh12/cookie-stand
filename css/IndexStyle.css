@@ -4,7 +4,7 @@ body{
 
 header h2{
     text-align: center;
-    background-color: sandybrown;
+    background-color: rgb(233, 233, 233);
     margin: 0;
     padding: 10px;
 }
@@ -28,6 +28,6 @@ header nav ul li a{
 
 
 footer{
-    background-color: sandybrown;
+    background-color:rgb(233, 233, 233);
     padding: 10px;
 }

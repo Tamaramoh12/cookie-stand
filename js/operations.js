@@ -1,4 +1,17 @@
 'use strict';
+// Lab 9 - Forms & Events
+var form = document.getElementById ('cookisCountryForm');
+
+form.addEventListener('submit', function(event){
+    event.preventDefault();
+    var name = event.target.name.value;
+    var min = event.target.min.value;
+    var max = event.target.max.value;
+    var avg = event.target.avg.value;
+    var location = new Country(name,min,max,avg);
+    location.renderContent();
+});
+
 
 //Lab 7 - Constructors
 var obj=[];
@@ -111,14 +124,17 @@ new Country('Paris', 20, 38, 2.3);
 new Country('Lima', 2, 16, 4.6);
 
 //Calling the functions
+//call row #1
 obj[0].renderFirstRow();
-for(var i=0 ;i<obj.length;i++){
 
+//call the content rows
+for(var i=0 ;i<obj.length;i++){
     obj[i].renderContent();
 }
 totalOfTotal();
 obj[0].renderLastRow();
 
+//call the last row
 function totalOfTotal(){
     var temp=0;
     for (var t = 0; t < hours.length; t++) {
@@ -126,9 +142,8 @@ function totalOfTotal(){
             temp+=obj[o].cookies[t]
         }
         coloumnTotal.push(temp);
-         totalOfTotals +=temp;
-         temp=0;
+        totalOfTotals +=temp;
+        temp=0;
     }
 }
 
-//Finally, Lab 7 has done, 12:30am 

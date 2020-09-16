@@ -23,9 +23,35 @@
     </header>
 
     <main>
-        <form>
+        <form action="" id="cookisCountryForm">
+            <fieldset>
+                <label for="name">Country Name:</label>
+                <br>
+                <input type="text" id="name">
+                <br>
+                <br>
 
+                <label for="min">Minimum Number Of Customers Per Hour:</label>
+                <br>
+                <input type="number" id="min">
+                <br>
+                <br>
+
+                <label for="max">Maximum Number Of Customers Per Hour:</label>
+                <br>
+                <input type="number" id="max">
+                <br>
+                <br>
+
+                <label for="avg">Average Number Of Cookies:</label>
+                <br>
+                <input type="number" id="avg">
+                <br>
+                <br>
+                <input type="submit" value="Add">
+            </fieldset>
         </form>
+
         <div id="table-result"></div>
         <script src="js/operations.js"></script>
     </main>
