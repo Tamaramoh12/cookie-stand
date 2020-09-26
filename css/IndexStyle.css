@@ -1,15 +1,16 @@
 body{
     font-size: 18px;
 }
-
 header h2{
     text-align: center;
     background-color: rgb(233, 233, 233);
-    margin: 0;
-    padding: 10px;
+    margin: -22px;
+    padding: 20px;
+    font-family: 'Carter One', cursive;
 }
 header nav{
     background-color: bisque;
+    margin: -10px;
 }
 header nav ul{
     text-align: center;
@@ -24,10 +25,20 @@ header nav ul li a{
     text-decoration: none;
     font-weight: bold;
 }
-
-
-
+header .slider img{
+    display: block;
+    margin: 0px auto;
+}
+/* Start Footer Style */
 footer{
     background-color:rgb(233, 233, 233);
     padding: 10px;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    margin: 10px -50px -20px -50px;
+
 }
+footer img{
+    padding-right: 10px;
+}
+/* End Footer Style */
